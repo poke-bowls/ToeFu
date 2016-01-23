@@ -11,7 +11,7 @@ PocketTanks.Boot.prototype.preload = function() {
   //autoload each asset by type
   Object.keys(PocketTanks.ASSETS).forEach(function(type){
     for( var asset in PocketTanks.ASSETS[type] ){
-      PocketTanks.game.load[type.toLowerCase() ](
+      PocketTanks.game.load[ type.toLowerCase() ](
         PocketTanks.ASSETS[type][ asset ].name,
         PocketTanks.ASSETS[type][ asset ].path,
         PocketTanks.ASSETS[type][ asset ].width,

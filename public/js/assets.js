@@ -12,8 +12,8 @@
 
 PocketTanks.ASSETS = {
   //asset path must be a valid game.load.[x] method
-  SpriteSheet : {
-    Player : {
+  SPRITESHEET : {
+    PLAYER : {
       name : 'player',
       path : 'assets/graphics/players_100x96.png',
       width : 100,
