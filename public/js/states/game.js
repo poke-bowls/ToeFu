@@ -31,6 +31,15 @@ var INITIAL_POSITIONS = [
 
   PocketTanks.Game.prototype.update = function() {
 
+    //set facing direction
+    if( this.player_1.x < this.player_2.x ) {
+      this.player_1.facing = PocketTanks.Player.FACING.RIGHT;
+      this.player_2.facing = PocketTanks.Player.FACING.LEFT;
+    } else {
+      this.player_1.facing = PocketTanks.Player.FACING.LEFT;
+      this.player_2.facing = PocketTanks.Player.FACING.RIGHT;
+    }
+
   };
 
   PocketTanks.Game.prototype.shutdown = function() {
