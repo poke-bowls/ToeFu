@@ -1,6 +1,6 @@
 /*
  * each asset is organized by type
- * each asset has struct
+ * each asset has structure
  *   {
  *     name : String
  *     path : String

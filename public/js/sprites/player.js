@@ -4,7 +4,7 @@
 var ANIMATIONS = {
   IDLE : {
     name : 'idle',
-    frames : [0, 1, 2, 3 ],
+    frames : [ 0, 1, 2, 3 ],
     fps : 5
   }
 };
@@ -60,6 +60,32 @@ function select_sprite_row( player_id ) {
 
     //update facing
     this.scale.x = FACING_FACTOR[ this.facing ];
+
+  };
+
+  PocketTanks.Player.prototype.jump = function() {
+
+
+  };
+
+  PocketTanks.Player.prototype.dive = function() {
+
+  };
+
+  PocketTanks.Player.prototype.dive_stop = function() {
+
+  };
+
+  PocketTanks.Player.prototype.step_left = function() {
+    console.log( 'stepping left' );
+  };
+
+  PocketTanks.Player.prototype.step_right = function() {
+
+  };
+
+  //stop stepping left or right
+  PocketTanks.Player.prototype.stop = function() {
 
   };
 

@@ -27,6 +27,9 @@ var INITIAL_POSITIONS = [
     this.player_2.x = INITIAL_POSITIONS[1].x;
     this.player_2.y = INITIAL_POSITIONS[1].y;
 
+    // initialize input handler
+    this.input = new PocketTanks.GameInput(this);
+
   };
 
   PocketTanks.Game.prototype.update = function() {
@@ -43,6 +46,11 @@ var INITIAL_POSITIONS = [
   };
 
   PocketTanks.Game.prototype.shutdown = function() {
+
+  };
+
+  //Input actions
+  PocketTanks.Game.prototype.continue = function() {
 
   };
 
